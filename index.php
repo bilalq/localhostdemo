@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>Our localhost app</h1>
-    <div id="form" class="well">
+    <div id="form">
       <form id="name" method="post" action="handler.php">
         <input type="text" value="name" name="full_name">
         <input type="submit" value="Submit">

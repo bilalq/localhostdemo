@@ -1,10 +1,26 @@
+body {
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
 #content {
   width: 60%;
   margin: auto;
   padding: 50px;
 }
 
-#form {
-  width: 30%;
-  padding: 10px;
+h1 {
+  margin-bottom: 15px;
 }
+
+#form {
+  border: 1px solid gray;
+  padding: 20px;
+  width: 30%;
+  background: #eeeeee;
+}
+
+form {
+  margin: 0; !important
+}
+

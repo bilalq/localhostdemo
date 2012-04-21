@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="well" id="content">
-      <h1>Visitors include:</h1>";
+      <h1>Visitors include:</h1>
       <?php
         require_once 'mongo.php';
 
