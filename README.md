@@ -1,4 +1,4 @@
-#Setting up Localhost# 
+#Setting up Localhost
 
 ##PHP development with Apache, MySQL, and PHP:##
 

@@ -6,19 +6,27 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
   </head>
   <body>
-  <?php
-    require_once 'mongo.php';
+    <div class="well" id="content">
+      <h1>Visitors include:</h1>";
+      <?php
+        require_once 'mongo.php';
 
-    $entry = $_POST['full_name'];
-    $collection->insert($entry);
-    $cursor = $collection->find();
+        $entry = $_POST['full_name'];
+        $word = array("name" => $entry);
+        $result = $collection->insert($word);
+        $cursor = $collection->find();
 
-    $output = "";
-    foreach ($cursor as $target) {
-      $output = '<p>'.$target.'</p><br />';
-    }
-    echo $output;
-    echo "Handler loading";
-  ?>
+        $output = "";
+        $list = array();
+        foreach ($cursor as $target) {
+          array_push($list, $target);
+        }
+
+        foreach ($list as $foo) {
+          echo "<h2>".$foo["name"]."</p>";
+          echo "<br />";
+        }
+      ?>
+    </div>
   </body>
 </html>
